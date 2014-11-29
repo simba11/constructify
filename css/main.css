@@ -1,0 +1,201 @@
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 200;
+}
+
+a, a.btn:hover {
+	color: #f8f8f8;
+	text-decoration: none;
+}
+
+.btn {
+	display: inline-block;
+	font-size: 1em;
+	font-weight: 500;
+	border-radius: 0;
+}
+
+label {
+	font-weight: 500;
+	margin-bottom: 3px;
+}
+
+.fadein {
+	opacity: 0;
+}
+/**** NAV ****/
+.navbar {
+	padding: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+a.navbar-brand {
+	color: #f8f8f8;
+	font-size: 1.3em;
+	font-weight: 200;
+	border: 2px solid #f8f8f8;
+	height: auto;
+	padding: 5px 10px 5px 10px;
+}
+.navbar-right>li>a {
+	padding: 5px 15px 0 15px;
+}
+
+/**** INTRO ****/
+#intro {
+	color: #f8f8f8;
+	background: url(../img/bg2.png) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+.intro-message {
+	position: relative;
+	padding-top: 40%;
+	padding-bottom: 20%;
+}
+
+	.intro-message > h1 {
+		text-align: left;
+		font-size: 2.5em;
+		font-weight: 100;
+		text-transform: uppercase;
+	}
+
+	.intro-message > p {
+		font-weight: 200;
+		font-size: 1em;
+		text-align: left;
+	}
+
+.intro-btn {
+	border: 2px solid #f8f8f8;
+	margin-top: 2em;
+}
+	a.intro-btn:hover {
+		background-color: #0081c4;
+	}
+/**** SIGN UP FORM ****/
+.signup-form {
+	position: relative;
+	background-color: black;
+	background:rgba(0,0,0,0.5);
+	margin-top: 20%;
+	padding: 1.5em;
+	text-align: left;
+}
+	.signup-form > h4 {
+		font-weight: 100;
+		margin: 0;
+		line-height: 5px;
+	}
+	.signup-form > h1 {
+		font-weight: 300;
+		font-size: 3.5em;
+		margin: 0 0 10px 0;
+	}
+	.signup-form > p {
+		margin-top: 1em;
+		margin-bottom: 1.5em;
+	}
+	.submit-btn {
+		border: 2px solid #f8f8f8;
+		margin-top: 1em;
+		background-color: #0081c4;
+		background:rgba(0,129,196,0.5);
+		width: 100%
+	}
+	.submit-btn:hover {
+		color: #f8f8f8;
+		text-decoration: none;
+		background-color: #0081c4;
+		background:rgba(0,129,196,0.7);
+	}
+
+/**** ABOUT ****/
+#about {
+	color: #b3b3b3;
+	margin: 6em 4em 2em 4em;
+}
+
+#about-msg > h1 {
+	font-weight: 100;
+	font-size: 2.5em;
+}
+
+/**** FEATURES ****/
+#features {
+	background-color: #424a56;
+	padding: 4em 2em 4em 2em;
+}
+
+#feature-heading > h1 {
+	color: #f8f8f8;
+	text-align: center;
+	margin-bottom: 2em;
+}
+.feature {
+	margin: 2em 2em 2em 6em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #f8f8f8;
+}
+
+.feature-icon {
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+	 .feature-icon:hover {
+	  -webkit-filter: brightness(40%);
+	}
+
+.feature-text {
+	color:  #f8f8f8;
+}
+.feature-text > h1 {
+	font-weight: 100;
+}
+
+/**** CONTACT ****/
+#contact { 
+	background-color: #e8f5ff;
+	background-size: cover; 
+}
+.contact-title {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+	.contact-title > h1 {
+		font-weight: 500;
+	}
+#contact p {
+	font-weight: 400;
+}
+.contact-btn {
+		border: 2px solid #424a56;
+		margin-top: 1em;
+		margin-bottom: 2em;
+		background-color: #ecf0f1;
+		width: 100%
+	}
+	.contact-btn:hover {
+		color: #f8f8f8;
+		text-decoration: none;
+		background-color: #0081c4;
+	}

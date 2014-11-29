@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Constructify</title>
+    <meta name="description" content="Constructify - Cloud-based scheduling and project planning for construction projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel='stylesheet' href="css/main.css">
+    <link rel='stylesheet' href="css/app.css">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.js"></script>
+</head>
+
+<body>
+	<!--[if lt IE 7]>   
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+	<!-- NAVIGATION -->
+    <nav class='navbar'>
+    	<div class="container">
+    		<div class="row outer-nav">
+    		<!-- Outer nav -->
+    		<a class="navbar-brand" href="#">CONSTRUCTIFY</a>
+             	<div class="dropdown pull-right">
+             		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sim Brar <span class="caret"></span></a>
+             		<ul class="dropdown-menu" role="menu">
+             			<li><a href="#">My Account</a></li>
+             			<li><a href="#">Settings</a></li>
+             			<li class="divider"></li>
+             			<li><a href="#">Logout</a></li>
+             		</ul>
+             	</div>
+         	</div>
+            <!-- Inner nav -->
+            <div class="row inner-nav"> 
+            	<!-- TABS -->
+	            <ul class="nav nav-tabs nav-justified" role="tablist">
+	            	<li class="active"><a href="#dashboard_tab" role="tab" data-toggle="tab">Dashboard</a></li>
+					<li><a href="#task_tab" role="tab" data-toggle="tab">Task Manager</a></li>
+					<li><a href="#schedule_tab" role="tab" data-toggle="tab">Schedule</a></li>
+					<li><a href="#billing_tab" role="tab" data-toggle="tab">Billing</a></li>
+					<li><a href="#documents_tab" role="tab" data-toggle="tab">Documents</a></li>
+					<li><a href="#feed_tab" role="tab" data-toggle="tab">Feed</a></li>
+	            </ul>
+	            <!-- PILLS (inside tabs) -->
+	            <div class="tab-content">
+	            	<div id="dashboard_tab" class="tab-pane">
+            		</div>
+	            	<div id="task_tab" class="tab-pane">
+	            		<ul class="nav nav-pills">
+	            			<li class="active"><a href="#">Zone 1</a></li>
+							<li><a href="#" >Zone 2</a></li>
+							<li><a href="#">Zone 3</a></li>
+							<li><a href="#">Zone 4</a></li>
+							<li><a href="#">Zone 5</a></li>
+	            		</ul>
+	            		<!-- TASK LIST -->
+	            		<div class="container">
+	            			<div class="col-md-9 task-list">
+	            				<div class="task-header">
+		            				<h1>TASKS</h1>
+		            				<a href="#" class="btn-add-task pull-right" data-toggle="modal" data-target="#taskModal">Add Task</a>
+            					</div>
+
+            					<!-- Add Task MODAL -->
+            					<div class="modal fade" id="taskModal" tabindex="-1" role="dialog" aria-labelledby="taskModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+									    <div class="modal-content">
+									      <div class="modal-header">
+									      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        									<h4 class="modal-title" id="taskModalLabel">Add new task</h4>
+									      </div>
+									      <div class="modal-body">
+									      	<form role="form">
+									      		<div class="dropdown">
+									      			Select Task Type: </br>
+									      			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+													    Task types
+													    <span class="caret"></span>
+													  </button>
+													  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+													    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Technician Site Visit</a></li>
+													    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Task Type Two</a></li>
+													   </ul>
+									      		</div>
+									      		jQuery populates task form depending on selection.
+									      	</form>
+									      </div>
+									      <div class="modal-footer">
+									        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									        <button type="button" class="btn btn-primary">Add Task</button>
+									      </div>
+								      	</div>
+							      	</div>
+            					</div>
+
+            					<!-- FILTERS -->
+            					<div class="task-table-filters">
+            						<ul class="nav nav-pills nav-justified">
+	            						<li class="active"><a href="#">All <span class="badge">42</span></a></li>
+	            						<li><a href="#" >Due this week <span class="badge">21</span></a></li>
+										<li><a href="#">Due this month</a></li>
+										<li><a href="#">Overdue <span class="badge">5</span></a></li>
+            					</div>
+            					<!-- TABLE -->
+            					<div class="task-table">
+            						<table class="table table-hover">
+										<thead>
+										    <tr>
+										        <th>Zone</th>
+										        <th>Task Code</th>
+										        <th>Description</th>
+										        <th>Est. Due</th>
+										        <th>Delegate</th>
+										        <th>% Complete</th>
+										        <th>Variance</th>
+										    </tr>
+										</thead>
+										<!-- POPULATE -->
+										<tr>
+										    <td>1</td>
+										    <td>123ABC</td>
+										    <td>Filler task description goes here.</td>
+										    <td>May 06 <span style="color:red">[10 days]</span></td>
+										    <td>Sim Brar</td>
+										    <td>
+											    <div class="progress">
+												  <div class="bar" style="width: 60%;"></div>
+												</div>
+											</td>
+										    <td style="color:green">5 days</td>
+										</tr>
+										<tr>
+										    <td>1</td>
+										    <td>123ABC</td>
+										    <td>Filler task description goes here.</td>
+										    <td>May 06 <span style="color:red">[10 days]</span></td>
+										    <td>Sim Brar</td>
+										    <td>
+											    <div class="progress">
+												  <div class="bar" style="width: 60%;"></div>
+												</div>
+											</td>
+										    <td style="color:green">5 days</td>
+										</tr>
+										<tr>
+										    <td>1</td>
+										    <td>123ABC</td>
+										    <td>Filler task description goes here.</td>
+										    <td>May 06 <span style="color:red">[10 days]</span></td>
+										    <td>Sim Brar</td>
+										    <td>
+											    <div class="progress">
+												  <div class="bar" style="width: 60%;"></div>
+												</div>
+											</td>
+										    <td style="color:green">5 days</td>
+										</tr>
+										<tr>
+										    <td>1</td>
+										    <td>123ABC</td>
+										    <td>Filler task description goes here.</td>
+										    <td>May 06 <span style="color:red">[10 days]</span></td>
+										    <td>Sim Brar</td>
+										    <td>
+											    <div class="progress">
+												  <div class="bar" style="width: 60%;"></div>
+												</div>
+											</td>
+										    <td style="color:green">5 days</td>
+										</tr>
+										<tr>
+										    <td>1</td>
+										    <td>123ABC</td>
+										    <td>Filler task description goes here.</td>
+										    <td>May 06 <span style="color:red">[10 days]</span></td>
+										    <td>Sim Brar</td>
+										    <td>
+											    <div class="progress">
+												  <div class="bar" style="width: 60%;"></div>
+												</div>
+											</td>
+										    <td style="color:green">5 days</td>
+										</tr>
+
+
+
+            						</table>
+            					</div>
+	            			</div>
+	            			<div class="col-md-3 task-notifications">
+	            				<h1>Notifications</h1>
+	            				<h2>Urgent / Priority</h2>
+	            					<ul>
+	            						<li>Filler item</li>
+	            						<li>Filler item</li>
+	            						<li>Filler item</li>
+	            						<li>Filler item</li>
+	            					</ul>
+	            				<h2>Latest Updates</h2>
+	            					<ul>
+	            						<li>Filler item</li>
+	            						<li>Filler item</li>
+	            						<li>Filler item</li>
+	            						<li>Filler item</li>
+	            					</ul>
+	            			</div>
+	            		</div>
+	            	</div>
+	            	<div id="schedule_tab" class="tab-pane">
+	            	</div>
+	            	<div id="billing_tab" class="tab-pane">
+	            	</div>
+	            	<div id="documents_tab" class="tab-pane">
+	            	</div>
+	            	<div id="feed_tab" class="tab-pane">
+	            	</div>
+	            </div>
+            </div>
+    </nav><!-- END NAVIGATION -->
+</body>
+
